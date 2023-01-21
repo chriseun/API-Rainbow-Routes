@@ -35,6 +35,10 @@ app.get('/:color', function (req, res) {
     `)
 })
 
+app.post('/:color', (req, res) =>{
+    res.send('Hello world')
+})
+
 
 // Listen to a port number defined by a local environment variable
 app.listen(process.env.PORT)
